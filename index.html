@@ -12,33 +12,33 @@
 <body>
     <div class="calculator">
         <div class="input">
-            <input type="number" id="input" value="0">
+            <input id="input" value="0" readonly>
         </div>
         <div class="table">
             <table>
                 <tr>
-                    <td><button class="but1">1</button></td>
-                    <td><button class="but2">2</button></td>
-                    <td><button class="but3">3</button></td>
-                    <td><button class="but4">AC</button></td>
+                    <td><button id="input1" onclick="val_but(1)">1</button></td>
+                    <td><button id="input2" onclick="val_but(2)">2</button></td>
+                    <td><button id="input3" onclick="val_but(3)">3</button></td>
+                    <td><button id="input4" onclick="clearVal('0')">AC</button></td>
                 </tr>
                 <tr>
-                    <td><button class="but5">4</button></td>
-                    <td><button class="but6">5</button></td>
-                    <td><button class="but7">6</button></td>
-                    <td><button class="but8">x</button></td>
+                    <td><button id="input5" onclick="val_but(4)">4</button></td>
+                    <td><button id="input6" onclick="val_but(5)">5</button></td>
+                    <td><button id="input7" onclick="val_but(6)">6</button></td>
+                    <td><button id="input8" onclick="val_symb('x')">x</button></td>
                 </tr>
                 <tr>
-                    <td><button class="but9">7</button></td>
-                    <td><button class="but10">8</button></td>
-                    <td><button class="but11">9</button></td>
-                    <td><button class="but12">-</button></td>
+                    <td><button id="input9" onclick="val_but(7)">7</button></td>
+                    <td><button id="input10" onclick="val_but(8)">8</button></td>
+                    <td><button id="input11" onclick="val_but(9)">9</button></td>
+                    <td><button id="input12" onclick="val_symb('-')">-</button></td>
                 </tr>
                 <tr>
-                    <td><button class="but13">0</button></td>
-                    <td><button class="but14">/</button></td>
-                    <td><button class="but15">+</button></td>
-                    <td><button class="but16">=</button></td>
+                    <td><button id="input13" onclick="val_but(0)">0</button></td>
+                    <td><button id="input14" onclick="val_symb('/')">/</button></td>
+                    <td><button id="input15" onclick="val_symb('+')">+</button></td>
+                    <td><button id="input16" onclick="submit_val()">=</button></td>
                 </tr>
             </table>
         </div>
